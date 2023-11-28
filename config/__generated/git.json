@@ -1,0 +1,315 @@
+{
+  "synopsisTerms": [
+    {
+      "synopsisFixedTerm": "git",
+      "tag": "SynopsisFixedTerm"
+    },
+    {
+      "synopsisFlagSection": {
+        "flagSectionSequences": [
+          {
+            "flagSectionSequenceTerms": [
+              {
+                "flagSectionFlagTerm": "-v",
+                "tag": "FlagSectionFlagTerm"
+              }
+            ]
+          },
+          {
+            "flagSectionSequenceTerms": [
+              {
+                "flagSectionFlagTerm": "--version",
+                "tag": "FlagSectionFlagTerm"
+              }
+            ]
+          }
+        ]
+      },
+      "tag": "SynopsisFlagSection"
+    },
+    {
+      "synopsisFlagSection": {
+        "flagSectionSequences": [
+          {
+            "flagSectionSequenceTerms": [
+              {
+                "flagSectionFlagTerm": "-h",
+                "tag": "FlagSectionFlagTerm"
+              }
+            ]
+          },
+          {
+            "flagSectionSequenceTerms": [
+              {
+                "flagSectionFlagTerm": "--help",
+                "tag": "FlagSectionFlagTerm"
+              }
+            ]
+          }
+        ]
+      },
+      "tag": "SynopsisFlagSection"
+    },
+    {
+      "synopsisFlagSection": {
+        "flagSectionSequences": [
+          {
+            "flagSectionSequenceTerms": [
+              {
+                "flagSectionFlagTerm": "-C",
+                "tag": "FlagSectionFlagTerm"
+              },
+              {
+                "flagSectionSubstitutionTerm": "<path>",
+                "tag": "FlagSectionSubstitutionTerm"
+              }
+            ]
+          }
+        ]
+      },
+      "tag": "SynopsisFlagSection"
+    },
+    {
+      "synopsisFlagSection": {
+        "flagSectionSequences": [
+          {
+            "flagSectionSequenceTerms": [
+              {
+                "flagSectionFlagTerm": "-c",
+                "tag": "FlagSectionFlagTerm"
+              },
+              {
+                "flagSectionSubstitutionKeyValueTerm": "<name>=<value>",
+                "tag": "FlagSectionSubstitutionKeyValueTerm"
+              }
+            ]
+          }
+        ]
+      },
+      "tag": "SynopsisFlagSection"
+    },
+    {
+      "synopsisFlagSection": {
+        "flagSectionSequences": [
+          {
+            "flagSectionSequenceTerms": [
+              {
+                "flagSectionOptionalParametrizedFlagTerm": {
+                  "optionalParametrizedFlag": "--exec-path",
+                  "optionalParametrizedFlagArgument": "[<path>]"
+                },
+                "tag": "FlagSectionOptionalParametrizedFlagTerm"
+              }
+            ]
+          }
+        ]
+      },
+      "tag": "SynopsisFlagSection"
+    },
+    {
+      "synopsisFlagSection": {
+        "flagSectionSequences": [
+          {
+            "flagSectionSequenceTerms": [
+              {
+                "flagSectionFlagTerm": "--html-path",
+                "tag": "FlagSectionFlagTerm"
+              }
+            ]
+          }
+        ]
+      },
+      "tag": "SynopsisFlagSection"
+    },
+    {
+      "synopsisFlagSection": {
+        "flagSectionSequences": [
+          {
+            "flagSectionSequenceTerms": [
+              {
+                "flagSectionFlagTerm": "--man-path",
+                "tag": "FlagSectionFlagTerm"
+              }
+            ]
+          }
+        ]
+      },
+      "tag": "SynopsisFlagSection"
+    },
+    {
+      "synopsisFlagSection": {
+        "flagSectionSequences": [
+          {
+            "flagSectionSequenceTerms": [
+              {
+                "flagSectionFlagTerm": "--info-path",
+                "tag": "FlagSectionFlagTerm"
+              }
+            ]
+          }
+        ]
+      },
+      "tag": "SynopsisFlagSection"
+    },
+    {
+      "synopsisFlagSection": {
+        "flagSectionSequences": [
+          {
+            "flagSectionSequenceTerms": [
+              {
+                "flagSectionFlagTerm": "-p",
+                "tag": "FlagSectionFlagTerm"
+              }
+            ]
+          },
+          {
+            "flagSectionSequenceTerms": [
+              {
+                "flagSectionFlagTerm": "--paginate",
+                "tag": "FlagSectionFlagTerm"
+              }
+            ]
+          },
+          {
+            "flagSectionSequenceTerms": [
+              {
+                "flagSectionFlagTerm": "-P",
+                "tag": "FlagSectionFlagTerm"
+              }
+            ]
+          },
+          {
+            "flagSectionSequenceTerms": [
+              {
+                "flagSectionFlagTerm": "--no-pager",
+                "tag": "FlagSectionFlagTerm"
+              }
+            ]
+          }
+        ]
+      },
+      "tag": "SynopsisFlagSection"
+    },
+    {
+      "synopsisFlagSection": {
+        "flagSectionSequences": [
+          {
+            "flagSectionSequenceTerms": [
+              {
+                "flagSectionFlagTerm": "--no-replace-objects",
+                "tag": "FlagSectionFlagTerm"
+              }
+            ]
+          }
+        ]
+      },
+      "tag": "SynopsisFlagSection"
+    },
+    {
+      "synopsisFlagSection": {
+        "flagSectionSequences": [
+          {
+            "flagSectionSequenceTerms": [
+              {
+                "flagSectionFlagTerm": "--bare",
+                "tag": "FlagSectionFlagTerm"
+              }
+            ]
+          }
+        ]
+      },
+      "tag": "SynopsisFlagSection"
+    },
+    {
+      "synopsisFlagSection": {
+        "flagSectionSequences": [
+          {
+            "flagSectionSequenceTerms": [
+              {
+                "flagSectionParametrizedFlagTerm": {
+                  "parametrizedFlag": "--git-dir",
+                  "parametrizedFlagArgument": "<path>"
+                },
+                "tag": "FlagSectionParametrizedFlagTerm"
+              }
+            ]
+          }
+        ]
+      },
+      "tag": "SynopsisFlagSection"
+    },
+    {
+      "synopsisFlagSection": {
+        "flagSectionSequences": [
+          {
+            "flagSectionSequenceTerms": [
+              {
+                "flagSectionParametrizedFlagTerm": {
+                  "parametrizedFlag": "--work-tree",
+                  "parametrizedFlagArgument": "<path>"
+                },
+                "tag": "FlagSectionParametrizedFlagTerm"
+              }
+            ]
+          }
+        ]
+      },
+      "tag": "SynopsisFlagSection"
+    },
+    {
+      "synopsisFlagSection": {
+        "flagSectionSequences": [
+          {
+            "flagSectionSequenceTerms": [
+              {
+                "flagSectionParametrizedFlagTerm": {
+                  "parametrizedFlag": "--namespace",
+                  "parametrizedFlagArgument": "<name>"
+                },
+                "tag": "FlagSectionParametrizedFlagTerm"
+              }
+            ]
+          }
+        ]
+      },
+      "tag": "SynopsisFlagSection"
+    },
+    {
+      "synopsisFlagSection": {
+        "flagSectionSequences": [
+          {
+            "flagSectionSequenceTerms": [
+              {
+                "flagSectionParametrizedFlagTerm": {
+                  "parametrizedFlag": "--config-env",
+                  "parametrizedFlagArgument": "<name>=<envvar>"
+                },
+                "tag": "FlagSectionParametrizedFlagTerm"
+              }
+            ]
+          }
+        ]
+      },
+      "tag": "SynopsisFlagSection"
+    },
+    {
+      "synopsisSubstitutionTerm": "<command>",
+      "tag": "SynopsisSubstitutionTerm"
+    },
+    {
+      "synopsisFlagSection": {
+        "flagSectionSequences": [
+          {
+            "flagSectionSequenceTerms": [
+              {
+                "flagSectionSubstitutionTerm": "<args>",
+                "tag": "FlagSectionSubstitutionTerm"
+              }
+            ]
+          }
+        ]
+      },
+      "tag": "SynopsisFlagSection"
+    }
+  ]
+}

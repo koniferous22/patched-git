@@ -1,0 +1,15 @@
+#!/usr/bin/sh
+project_path=$(realpath "$(dirname "$0")/..")
+
+if [[ ! "$(which "jq")" ]]; then
+    echo "\"jq\" not found in \$PATH" >&2
+    exit 1
+fi
+if [[ ! "$(which "synopsis-parser")" ]]; then
+    echo "\"synopsis-parser\" dependency not found in \$PATH" >&2
+    exit 1
+fi
+
+man git-init  | awk '/^SYNOPSIS/,/^DESCRIPTION/ {print}' | head -n -1 | tail -n +2 | synopsis-parser | jq > "$project_path/config/__generated/git-init.json"
+man git-clone | awk '/^SYNOPSIS/,/^DESCRIPTION/ {print}' | head -n -1 | tail -n +2 | synopsis-parser | jq > "$project_path/config/__generated/git-clone.json"
+man git       | awk '/^SYNOPSIS/,/^DESCRIPTION/ {print}' | head -n -1 | tail -n +2 | synopsis-parser | jq > "$project_path/config/__generated/git.json"

@@ -1,0 +1,168 @@
+{
+  "synopsisTerms": [
+    {
+      "synopsisFixedTerm": "git",
+      "tag": "SynopsisFixedTerm"
+    },
+    {
+      "synopsisFixedTerm": "init",
+      "tag": "SynopsisFixedTerm"
+    },
+    {
+      "synopsisFlagSection": {
+        "flagSectionSequences": [
+          {
+            "flagSectionSequenceTerms": [
+              {
+                "flagSectionFlagTerm": "-q",
+                "tag": "FlagSectionFlagTerm"
+              }
+            ]
+          },
+          {
+            "flagSectionSequenceTerms": [
+              {
+                "flagSectionFlagTerm": "--quiet",
+                "tag": "FlagSectionFlagTerm"
+              }
+            ]
+          }
+        ]
+      },
+      "tag": "SynopsisFlagSection"
+    },
+    {
+      "synopsisFlagSection": {
+        "flagSectionSequences": [
+          {
+            "flagSectionSequenceTerms": [
+              {
+                "flagSectionFlagTerm": "--bare",
+                "tag": "FlagSectionFlagTerm"
+              }
+            ]
+          }
+        ]
+      },
+      "tag": "SynopsisFlagSection"
+    },
+    {
+      "synopsisFlagSection": {
+        "flagSectionSequences": [
+          {
+            "flagSectionSequenceTerms": [
+              {
+                "flagSectionParametrizedFlagTerm": {
+                  "parametrizedFlag": "--template",
+                  "parametrizedFlagArgument": "<template-directory>"
+                },
+                "tag": "FlagSectionParametrizedFlagTerm"
+              }
+            ]
+          }
+        ]
+      },
+      "tag": "SynopsisFlagSection"
+    },
+    {
+      "synopsisFlagSection": {
+        "flagSectionSequences": [
+          {
+            "flagSectionSequenceTerms": [
+              {
+                "flagSectionFlagTerm": "--separate-git-dir",
+                "tag": "FlagSectionFlagTerm"
+              },
+              {
+                "flagSectionSubstitutionTerm": "<git-dir>",
+                "tag": "FlagSectionSubstitutionTerm"
+              }
+            ]
+          }
+        ]
+      },
+      "tag": "SynopsisFlagSection"
+    },
+    {
+      "synopsisFlagSection": {
+        "flagSectionSequences": [
+          {
+            "flagSectionSequenceTerms": [
+              {
+                "flagSectionParametrizedFlagTerm": {
+                  "parametrizedFlag": "--object-format",
+                  "parametrizedFlagArgument": "<format>"
+                },
+                "tag": "FlagSectionParametrizedFlagTerm"
+              }
+            ]
+          }
+        ]
+      },
+      "tag": "SynopsisFlagSection"
+    },
+    {
+      "synopsisFlagSection": {
+        "flagSectionSequences": [
+          {
+            "flagSectionSequenceTerms": [
+              {
+                "flagSectionFlagTerm": "-b",
+                "tag": "FlagSectionFlagTerm"
+              },
+              {
+                "flagSectionSubstitutionTerm": "<branch-name>",
+                "tag": "FlagSectionSubstitutionTerm"
+              }
+            ]
+          },
+          {
+            "flagSectionSequenceTerms": [
+              {
+                "flagSectionParametrizedFlagTerm": {
+                  "parametrizedFlag": "--initial-branch",
+                  "parametrizedFlagArgument": "<branch-name>"
+                },
+                "tag": "FlagSectionParametrizedFlagTerm"
+              }
+            ]
+          }
+        ]
+      },
+      "tag": "SynopsisFlagSection"
+    },
+    {
+      "synopsisFlagSection": {
+        "flagSectionSequences": [
+          {
+            "flagSectionSequenceTerms": [
+              {
+                "flagSectionOptionalParametrizedFlagTerm": {
+                  "optionalParametrizedFlag": "--shared",
+                  "optionalParametrizedFlagArgument": "[<permissions>]"
+                },
+                "tag": "FlagSectionOptionalParametrizedFlagTerm"
+              }
+            ]
+          }
+        ]
+      },
+      "tag": "SynopsisFlagSection"
+    },
+    {
+      "synopsisFlagSection": {
+        "flagSectionSequences": [
+          {
+            "flagSectionSequenceTerms": [
+              {
+                "flagSectionSubstitutionTerm": "<directory>",
+                "tag": "FlagSectionSubstitutionTerm"
+              }
+            ]
+          }
+        ]
+      },
+      "tag": "SynopsisFlagSection"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+global:
+  enabled: true
+  synopsisJSON: config/__generated/git.json
+  flagBlacklist:
+    - --help
+operations:
+  clone:
+    enabled: true 
+    synopsisJSON: config/__generated/git-clone.json
+    execution:
+      prompt: true
+      shouldAppendRepositoryArg: true
+      targetCommand: example/git-clone-hello
+  init:
+    enabled: true 
+    synopsisJSON: config/__generated/git-init.json
+    globalFlagBlacklist:
+      - --bare
+    flagBlacklist:
+      - --bare
+    execution:
+      prompt: true
+      shouldAppendRepositoryArg: true
+      targetCommand: example/git-init-hello
+

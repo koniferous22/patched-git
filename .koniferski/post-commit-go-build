@@ -1,0 +1,21 @@
+#!/usr/bin/sh
+
+# !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+# !!! SCRIPT INITIALIZED FROM koniferski-template !!!
+# !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+project_path=$(realpath "$(dirname "$0")/..")
+makefile_path="$project_path/Makefile"
+makefile_target=build
+makefile_target_regex="^$makefile_target:"
+if [[ ! -f "$makefile_path" ]]; then
+    echo "Error in repository \"$project_path\""
+    mpg123 -q "$SOUNDBOARD_PATH/koniferski-template/post-commit-go-build-makefile-not-found.mp3" &
+    exit 1
+fi
+if ! grep -E "$makefile_target_regex" "$makefile_path"; then
+    echo "Error in repository \"$project_path\""
+    mpg123 -q "$SOUNDBOARD_PATH/koniferski-template/post-commit-go-build-makefile-target-not-found.mp3" &
+    exit 1
+fi
+make -C "$project_path" "$makefile_target"

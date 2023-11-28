@@ -1,0 +1,24 @@
+#!/usr/bin/sh
+
+project_path=$(realpath "$(dirname "$0")/..")
+git_wrapper_path="$project_path/bin/git-wrapper"
+
+function resolve_git_wrapper_path() {
+    local patched_git_path=`dirname "$0"`
+    echo "$patched_git_path/../bin/git-wrapper"
+}
+
+ORIGINAL_PATH="$PATH"
+# Note: env variable isn't exported - changes aren't propagated anywhere
+PATH="$PATH_WITHOUT_PATCHING"
+original_git=$(which git)
+"$original_git" "$@"
+git_cmd_result=$?
+if [[ ! -x "$git_wrapper_path" ]]; then
+    echo "${RED}\"git-wrapper\" executable not found${RESET}" >&2
+    exit 1
+fi
+if [[ $git_cmd_result -ne 0 ]]; then
+    exit $git_cmd_result
+fi
+"$git_wrapper_path" "$@"
