@@ -395,13 +395,9 @@
               {
                 "flagSectionParametrizedFlagTerm": {
                   "parametrizedFlag": "--filter",
-                  "parametrizedFlagArgument": "<filter>"
+                  "parametrizedFlagArgument": "<filter-spec>"
                 },
                 "tag": "FlagSectionParametrizedFlagTerm"
-              },
-              {
-                "flagSectionFixedTerm": "[--also-filter-submodules]",
-                "tag": "FlagSectionFixedTerm"
               }
             ]
           }
@@ -415,27 +411,8 @@
           {
             "flagSectionSequenceTerms": [
               {
-                "flagSectionFlagTerm": "--",
+                "flagSectionFlagTerm": "--also-filter-submodules",
                 "tag": "FlagSectionFlagTerm"
-              }
-            ]
-          }
-        ]
-      },
-      "tag": "SynopsisFlagSection"
-    },
-    {
-      "synopsisSubstitutionTerm": "<repository>",
-      "tag": "SynopsisSubstitutionTerm"
-    },
-    {
-      "synopsisFlagSection": {
-        "flagSectionSequences": [
-          {
-            "flagSectionSequenceTerms": [
-              {
-                "flagSectionSubstitutionTerm": "<directory>",
-                "tag": "FlagSectionSubstitutionTerm"
               }
             ]
           }

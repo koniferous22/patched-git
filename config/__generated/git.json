@@ -211,6 +211,51 @@
           {
             "flagSectionSequenceTerms": [
               {
+                "flagSectionFlagTerm": "--no-lazy-fetch",
+                "tag": "FlagSectionFlagTerm"
+              }
+            ]
+          }
+        ]
+      },
+      "tag": "SynopsisFlagSection"
+    },
+    {
+      "synopsisFlagSection": {
+        "flagSectionSequences": [
+          {
+            "flagSectionSequenceTerms": [
+              {
+                "flagSectionFlagTerm": "--no-optional-locks",
+                "tag": "FlagSectionFlagTerm"
+              }
+            ]
+          }
+        ]
+      },
+      "tag": "SynopsisFlagSection"
+    },
+    {
+      "synopsisFlagSection": {
+        "flagSectionSequences": [
+          {
+            "flagSectionSequenceTerms": [
+              {
+                "flagSectionFlagTerm": "--no-advice",
+                "tag": "FlagSectionFlagTerm"
+              }
+            ]
+          }
+        ]
+      },
+      "tag": "SynopsisFlagSection"
+    },
+    {
+      "synopsisFlagSection": {
+        "flagSectionSequences": [
+          {
+            "flagSectionSequenceTerms": [
+              {
                 "flagSectionFlagTerm": "--bare",
                 "tag": "FlagSectionFlagTerm"
               }

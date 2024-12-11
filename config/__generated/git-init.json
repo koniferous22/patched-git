@@ -107,6 +107,24 @@
           {
             "flagSectionSequenceTerms": [
               {
+                "flagSectionParametrizedFlagTerm": {
+                  "parametrizedFlag": "--ref-format",
+                  "parametrizedFlagArgument": "<format>"
+                },
+                "tag": "FlagSectionParametrizedFlagTerm"
+              }
+            ]
+          }
+        ]
+      },
+      "tag": "SynopsisFlagSection"
+    },
+    {
+      "synopsisFlagSection": {
+        "flagSectionSequences": [
+          {
+            "flagSectionSequenceTerms": [
+              {
                 "flagSectionFlagTerm": "-b",
                 "tag": "FlagSectionFlagTerm"
               },
