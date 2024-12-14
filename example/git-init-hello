@@ -1,4 +1,4 @@
-#!/usr/bin/sh
+#!/usr/bin/env bash
 
 echo "Hello from patched git-init"
 test $1 && echo "Passed arg: $1"

@@ -1,15 +1,41 @@
-#!/bin/sh
-project_path=$(realpath "$(dirname "$0")/..")
+#!/usr/bin/env bash
+set -euo pipefail
 
-if [[ ! "$(which "jq")" ]]; then
-    echo "\"jq\" not found in \$PATH" >&2
-    exit 1
-fi
-if [[ ! "$(which "synopsis-parser")" ]]; then
-    echo "\"synopsis-parser\" dependency not found in \$PATH" >&2
-    exit 1
-fi
+function generate_config_linux() {
+    man git-init  | awk '/^SYNOPSIS/,/^DESCRIPTION/ {print}' | head -n -1 | tail -n +2 | synopsis-parser | jq > "$project_path/config/__generated/git-init.json"
+    man git-clone | awk '/^SYNOPSIS/,/^DESCRIPTION/ {print}' | head -n -1 | tail -n +2 | synopsis-parser | jq > "$project_path/config/__generated/git-clone.json"
+    man git       | awk '/^SYNOPSIS/,/^DESCRIPTION/ {print}' | head -n -1 | tail -n +2 | synopsis-parser | jq > "$project_path/config/__generated/git.json"
+}
 
-man git-init  | awk '/^SYNOPSIS/,/^DESCRIPTION/ {print}' | head -n -1 | tail -n +2 | synopsis-parser | jq > "$project_path/config/__generated/git-init.json"
-man git-clone | awk '/^SYNOPSIS/,/^DESCRIPTION/ {print}' | head -n -1 | tail -n +2 | synopsis-parser | jq > "$project_path/config/__generated/git-clone.json"
-man git       | awk '/^SYNOPSIS/,/^DESCRIPTION/ {print}' | head -n -1 | tail -n +2 | synopsis-parser | jq > "$project_path/config/__generated/git.json"
+function generate_config_darwin() {
+    man git-init  | col -bx | awk '/^SYNOPSIS/,/^DESCRIPTION/ {print}' | ghead -n -1 | tail -n +2 | synopsis-parser | jq > "$project_path/config/__generated/git-init.json"
+    man git-clone | col -bx | awk '/^SYNOPSIS/,/^DESCRIPTION/ {print}' | ghead -n -1 | tail -n +2 | synopsis-parser | jq > "$project_path/config/__generated/git-clone.json"
+    man git       | col -bx | awk '/^SYNOPSIS/,/^DESCRIPTION/ {print}' | ghead -n -1 | tail -n +2 | synopsis-parser | jq > "$project_path/config/__generated/git.json"
+}
+
+function main () {
+    local project_path=$(realpath "$(dirname "$0")/..")
+    local os_name="$(uname)"
+    if [[ ! "$(which "jq" 2>/dev/null)" ]]; then
+        echo "\"jq\" not found in \$PATH" >&2
+        return 1
+    fi
+    if [[ $os_name == "Darwin" && ! "$(which "ghead" 2>/dev/null)" ]]; then
+        echo "\"coreutils\" not installed - \"ghead\" command missing" >&2
+        return 1
+    fi
+    if [[ ! "$(which "synopsis-parser" 2>/dev/null)" ]]; then
+        echo "\"synopsis-parser\" dependency not found in \$PATH" >&2
+        return 1
+    fi
+    if [[ $os_name == "Linux" ]]; then
+        generate_config_linux
+    elif [[ $os_name == "Darwin" ]]; then
+        generate_config_darwin
+    else
+        echo "Unsupported OS detected" 1>&2
+        return 1
+    fi
+}
+
+main "$@"

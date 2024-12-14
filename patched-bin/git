@@ -1,4 +1,4 @@
-#!/usr/bin/sh
+#!/usr/bin/env bash
 
 project_path=$(realpath "$(dirname "$0")/..")
 git_wrapper_path="$project_path/bin/git-wrapper"
