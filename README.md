@@ -38,16 +38,26 @@ This is (for obvious reasons) an experimental repository, and its content should
     make -C patched-git build
     ```
 
-4. Minor tweak of project configuration
+4. Adjust the example project configuration - replace placeholders in [config.example.yml](./config/config.example.yml)
+    * Linux
 
     ```sh
     cp patched-git/config/config.example.yml patched-git/config/config.yml
     # Replace relative paths with absolute
-    sed -i "s#config/#$PWD/patched-git/config/#g" patched-git/config/config.yml
-    sed -i "s#example/#$PWD/patched-git/example/#g" patched-git/config/config.yml
+    sed -i "s#<<PWD>>#$PWD/patched-git#g" patched-git/config/config.yml
+    sed -i "s#<<OS>>#$(uname | tr '[:upper:]' '[:lower:]')#g" patched-git/config/config.yml
     ```
 
-5. Configure (quite a few) environment variables
+    * macOS `darwin` - difference in [`sed` command](https://stackoverflow.com/questions/22521207/how-to-use-sed-to-change-lines-in-place-on-a-mac-darwin)
+
+    ```sh
+    cp patched-git/config/config.example.yml patched-git/config/config.yml
+    # Replace relative paths with absolute
+    sed -i "" "s#<<PWD>>#$PWD/patched-git#g" patched-git/config/config.yml
+    sed -i "" "s#<<OS>>#$(uname | tr '[:upper:]' '[:lower:]')#g" patched-git/config/config.yml
+    ```
+
+5. Configure a few environment variables
     * Note - try this preferably in a session, rather than adding it to `.zshrc`/`.bashrc` right away
     * Full config summary in source code - [here](./git-wrapper/config/config.go)
 
@@ -59,6 +69,17 @@ This is (for obvious reasons) an experimental repository, and its content should
     # "git-wrapper" specific env variable
     PATCHED_GIT_IS_ENABLED=true
     PATCHED_GIT_CONFIG="$PWD/patched-git/config/config.yml"
+    ```
+
+    * For `darwin` (macOS) variables need to be exported in order to be passed into subprocess (todo - validate this)
+
+    ```sh
+    export PATH_WITHOUT_PATCHING="$PATH"
+    export PATCHED_GIT_PATH="$PWD/patched-git/patched-bin"
+    export PATH="$PATCHED_GIT_PATH:$PATH"
+    # "git-wrapper" specific env variable
+    export PATCHED_GIT_IS_ENABLED=true
+    export PATCHED_GIT_CONFIG="$PWD/patched-git/config/config.yml"
     ```
 
 6. Create a [bare](https://git-scm.com/book/en/v2/Git-on-the-Server-Getting-Git-on-a-Server) repository in same directory

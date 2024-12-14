@@ -1,19 +1,19 @@
 global:
   enabled: true
-  synopsisJSON: config/__generated/git.json
+  synopsisJSON: <<PWD>>/config/__generated/<<OS>>/git.json
   flagBlacklist:
     - --help
 operations:
   clone:
     enabled: true 
-    synopsisJSON: config/__generated/git-clone.json
+    synopsisJSON: <<PWD>>/config/__generated/<<OS>>/git-clone.json
     execution:
       prompt: true
       shouldAppendRepositoryArg: true
-      targetCommand: example/git-clone-hello
+      targetCommand: <<PWD>>/example/git-clone-hello
   init:
     enabled: true 
-    synopsisJSON: config/__generated/git-init.json
+    synopsisJSON: <<PWD>>/config/__generated/<<OS>>/git-init.json
     globalFlagBlacklist:
       - --bare
     flagBlacklist:
@@ -21,5 +21,5 @@ operations:
     execution:
       prompt: true
       shouldAppendRepositoryArg: true
-      targetCommand: example/git-init-hello
+      targetCommand: <<PWD>>/example/git-init-hello
 

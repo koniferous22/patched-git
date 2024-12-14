@@ -1,0 +1,447 @@
+{
+  "synopsisTerms": [
+    {
+      "synopsisFixedTerm": "git",
+      "tag": "SynopsisFixedTerm"
+    },
+    {
+      "synopsisFixedTerm": "clone",
+      "tag": "SynopsisFixedTerm"
+    },
+    {
+      "synopsisFlagSection": {
+        "flagSectionSequences": [
+          {
+            "flagSectionSequenceTerms": [
+              {
+                "flagSectionParametrizedFlagTerm": {
+                  "parametrizedFlag": "--template",
+                  "parametrizedFlagArgument": "<template-directory>"
+                },
+                "tag": "FlagSectionParametrizedFlagTerm"
+              }
+            ]
+          }
+        ]
+      },
+      "tag": "SynopsisFlagSection"
+    },
+    {
+      "synopsisFlagSection": {
+        "flagSectionSequences": [
+          {
+            "flagSectionSequenceTerms": [
+              {
+                "flagSectionFlagTerm": "-l",
+                "tag": "FlagSectionFlagTerm"
+              }
+            ]
+          }
+        ]
+      },
+      "tag": "SynopsisFlagSection"
+    },
+    {
+      "synopsisFlagSection": {
+        "flagSectionSequences": [
+          {
+            "flagSectionSequenceTerms": [
+              {
+                "flagSectionFlagTerm": "-s",
+                "tag": "FlagSectionFlagTerm"
+              }
+            ]
+          }
+        ]
+      },
+      "tag": "SynopsisFlagSection"
+    },
+    {
+      "synopsisFlagSection": {
+        "flagSectionSequences": [
+          {
+            "flagSectionSequenceTerms": [
+              {
+                "flagSectionFlagTerm": "--no-hardlinks",
+                "tag": "FlagSectionFlagTerm"
+              }
+            ]
+          }
+        ]
+      },
+      "tag": "SynopsisFlagSection"
+    },
+    {
+      "synopsisFlagSection": {
+        "flagSectionSequences": [
+          {
+            "flagSectionSequenceTerms": [
+              {
+                "flagSectionFlagTerm": "-q",
+                "tag": "FlagSectionFlagTerm"
+              }
+            ]
+          }
+        ]
+      },
+      "tag": "SynopsisFlagSection"
+    },
+    {
+      "synopsisFlagSection": {
+        "flagSectionSequences": [
+          {
+            "flagSectionSequenceTerms": [
+              {
+                "flagSectionFlagTerm": "-n",
+                "tag": "FlagSectionFlagTerm"
+              }
+            ]
+          }
+        ]
+      },
+      "tag": "SynopsisFlagSection"
+    },
+    {
+      "synopsisFlagSection": {
+        "flagSectionSequences": [
+          {
+            "flagSectionSequenceTerms": [
+              {
+                "flagSectionFlagTerm": "--bare",
+                "tag": "FlagSectionFlagTerm"
+              }
+            ]
+          }
+        ]
+      },
+      "tag": "SynopsisFlagSection"
+    },
+    {
+      "synopsisFlagSection": {
+        "flagSectionSequences": [
+          {
+            "flagSectionSequenceTerms": [
+              {
+                "flagSectionFlagTerm": "--mirror",
+                "tag": "FlagSectionFlagTerm"
+              }
+            ]
+          }
+        ]
+      },
+      "tag": "SynopsisFlagSection"
+    },
+    {
+      "synopsisFlagSection": {
+        "flagSectionSequences": [
+          {
+            "flagSectionSequenceTerms": [
+              {
+                "flagSectionFlagTerm": "-o",
+                "tag": "FlagSectionFlagTerm"
+              },
+              {
+                "flagSectionSubstitutionTerm": "<name>",
+                "tag": "FlagSectionSubstitutionTerm"
+              }
+            ]
+          }
+        ]
+      },
+      "tag": "SynopsisFlagSection"
+    },
+    {
+      "synopsisFlagSection": {
+        "flagSectionSequences": [
+          {
+            "flagSectionSequenceTerms": [
+              {
+                "flagSectionFlagTerm": "-b",
+                "tag": "FlagSectionFlagTerm"
+              },
+              {
+                "flagSectionSubstitutionTerm": "<name>",
+                "tag": "FlagSectionSubstitutionTerm"
+              }
+            ]
+          }
+        ]
+      },
+      "tag": "SynopsisFlagSection"
+    },
+    {
+      "synopsisFlagSection": {
+        "flagSectionSequences": [
+          {
+            "flagSectionSequenceTerms": [
+              {
+                "flagSectionFlagTerm": "-u",
+                "tag": "FlagSectionFlagTerm"
+              },
+              {
+                "flagSectionSubstitutionTerm": "<upload-pack>",
+                "tag": "FlagSectionSubstitutionTerm"
+              }
+            ]
+          }
+        ]
+      },
+      "tag": "SynopsisFlagSection"
+    },
+    {
+      "synopsisFlagSection": {
+        "flagSectionSequences": [
+          {
+            "flagSectionSequenceTerms": [
+              {
+                "flagSectionFlagTerm": "--reference",
+                "tag": "FlagSectionFlagTerm"
+              },
+              {
+                "flagSectionSubstitutionTerm": "<repository>",
+                "tag": "FlagSectionSubstitutionTerm"
+              }
+            ]
+          }
+        ]
+      },
+      "tag": "SynopsisFlagSection"
+    },
+    {
+      "synopsisFlagSection": {
+        "flagSectionSequences": [
+          {
+            "flagSectionSequenceTerms": [
+              {
+                "flagSectionFlagTerm": "--dissociate",
+                "tag": "FlagSectionFlagTerm"
+              }
+            ]
+          }
+        ]
+      },
+      "tag": "SynopsisFlagSection"
+    },
+    {
+      "synopsisFlagSection": {
+        "flagSectionSequences": [
+          {
+            "flagSectionSequenceTerms": [
+              {
+                "flagSectionFlagTerm": "--separate-git-dir",
+                "tag": "FlagSectionFlagTerm"
+              },
+              {
+                "flagSectionSubstitutionTerm": "<git-dir>",
+                "tag": "FlagSectionSubstitutionTerm"
+              }
+            ]
+          }
+        ]
+      },
+      "tag": "SynopsisFlagSection"
+    },
+    {
+      "synopsisFlagSection": {
+        "flagSectionSequences": [
+          {
+            "flagSectionSequenceTerms": [
+              {
+                "flagSectionFlagTerm": "--depth",
+                "tag": "FlagSectionFlagTerm"
+              },
+              {
+                "flagSectionSubstitutionTerm": "<depth>",
+                "tag": "FlagSectionSubstitutionTerm"
+              }
+            ]
+          }
+        ]
+      },
+      "tag": "SynopsisFlagSection"
+    },
+    {
+      "synopsisFlagSection": {
+        "flagSectionSequences": [
+          {
+            "flagSectionSequenceTerms": [
+              {
+                "flagSectionFlagTerm": "--[no-]single-branch",
+                "tag": "FlagSectionFlagTerm"
+              }
+            ]
+          }
+        ]
+      },
+      "tag": "SynopsisFlagSection"
+    },
+    {
+      "synopsisFlagSection": {
+        "flagSectionSequences": [
+          {
+            "flagSectionSequenceTerms": [
+              {
+                "flagSectionFlagTerm": "--no-tags",
+                "tag": "FlagSectionFlagTerm"
+              }
+            ]
+          }
+        ]
+      },
+      "tag": "SynopsisFlagSection"
+    },
+    {
+      "synopsisFlagSection": {
+        "flagSectionSequences": [
+          {
+            "flagSectionSequenceTerms": [
+              {
+                "flagSectionOptionalParametrizedFlagTerm": {
+                  "optionalParametrizedFlag": "--recurse-submodules",
+                  "optionalParametrizedFlagArgument": "[<pathspec>]"
+                },
+                "tag": "FlagSectionOptionalParametrizedFlagTerm"
+              }
+            ]
+          }
+        ]
+      },
+      "tag": "SynopsisFlagSection"
+    },
+    {
+      "synopsisFlagSection": {
+        "flagSectionSequences": [
+          {
+            "flagSectionSequenceTerms": [
+              {
+                "flagSectionFlagTerm": "--[no-]shallow-submodules",
+                "tag": "FlagSectionFlagTerm"
+              }
+            ]
+          }
+        ]
+      },
+      "tag": "SynopsisFlagSection"
+    },
+    {
+      "synopsisFlagSection": {
+        "flagSectionSequences": [
+          {
+            "flagSectionSequenceTerms": [
+              {
+                "flagSectionFlagTerm": "--[no-]remote-submodules",
+                "tag": "FlagSectionFlagTerm"
+              }
+            ]
+          }
+        ]
+      },
+      "tag": "SynopsisFlagSection"
+    },
+    {
+      "synopsisFlagSection": {
+        "flagSectionSequences": [
+          {
+            "flagSectionSequenceTerms": [
+              {
+                "flagSectionFlagTerm": "--jobs",
+                "tag": "FlagSectionFlagTerm"
+              },
+              {
+                "flagSectionSubstitutionTerm": "<n>",
+                "tag": "FlagSectionSubstitutionTerm"
+              }
+            ]
+          }
+        ]
+      },
+      "tag": "SynopsisFlagSection"
+    },
+    {
+      "synopsisFlagSection": {
+        "flagSectionSequences": [
+          {
+            "flagSectionSequenceTerms": [
+              {
+                "flagSectionFlagTerm": "--sparse",
+                "tag": "FlagSectionFlagTerm"
+              }
+            ]
+          }
+        ]
+      },
+      "tag": "SynopsisFlagSection"
+    },
+    {
+      "synopsisFlagSection": {
+        "flagSectionSequences": [
+          {
+            "flagSectionSequenceTerms": [
+              {
+                "flagSectionFlagTerm": "--[no-]reject-shallow",
+                "tag": "FlagSectionFlagTerm"
+              }
+            ]
+          }
+        ]
+      },
+      "tag": "SynopsisFlagSection"
+    },
+    {
+      "synopsisFlagSection": {
+        "flagSectionSequences": [
+          {
+            "flagSectionSequenceTerms": [
+              {
+                "flagSectionParametrizedFlagTerm": {
+                  "parametrizedFlag": "--filter",
+                  "parametrizedFlagArgument": "<filter>"
+                },
+                "tag": "FlagSectionParametrizedFlagTerm"
+              },
+              {
+                "flagSectionFixedTerm": "[--also-filter-submodules]",
+                "tag": "FlagSectionFixedTerm"
+              }
+            ]
+          }
+        ]
+      },
+      "tag": "SynopsisFlagSection"
+    },
+    {
+      "synopsisFlagSection": {
+        "flagSectionSequences": [
+          {
+            "flagSectionSequenceTerms": [
+              {
+                "flagSectionFlagTerm": "--",
+                "tag": "FlagSectionFlagTerm"
+              }
+            ]
+          }
+        ]
+      },
+      "tag": "SynopsisFlagSection"
+    },
+    {
+      "synopsisSubstitutionTerm": "<repository>",
+      "tag": "SynopsisSubstitutionTerm"
+    },
+    {
+      "synopsisFlagSection": {
+        "flagSectionSequences": [
+          {
+            "flagSectionSequenceTerms": [
+              {
+                "flagSectionSubstitutionTerm": "<directory>",
+                "tag": "FlagSectionSubstitutionTerm"
+              }
+            ]
+          }
+        ]
+      },
+      "tag": "SynopsisFlagSection"
+    }
+  ]
+}
